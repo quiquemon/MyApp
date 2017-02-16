@@ -1,0 +1,36 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Iniciar Sesión</h1>
+			<p class="text-justify">Introduce tus credenciales para entrar.</p>
+			<hr>
+			<form action="/login" method="post">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Correo electrónico:</label>
+						<div class="input-group">
+							<input type="email" name="email" class="form-control" maxlength="100" autofocus />
+							<span class="input-group-addon">
+								<span class="glyphicon-envelope"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Contraseña:</label>
+						<div class="input-group">
+							<input type="password" name="password" class="form-control" maxlength="72" />
+							<span class="input-group-addon">
+								<span class="glyphicon-asterisk"></span>
+							</span>
+						</div>
+					</div>
+					<input type="submit" value="Iniciar Sesión" class="btn btn-success" />
+					<a href="/" class="btn btn-danger">Cancelar</a>
+				</div>
+			</form>
+			<hr>
+		</div>
+	</div>
+</div>

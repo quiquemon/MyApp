@@ -10,7 +10,20 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
+//= require jquery-3.1.1.min.js
+//= require bootstrap.min.js
+//= require bootstrap-dialog.min.js
+//= require bootstrap-datepicker.min.js
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+	// Opciones del DatePicker.
+	$(".datepicker").datepicker({
+		format: "yyyy-mm-dd",
+		todayHighlight: true,
+		autoClose: true,
+		startDate: "1900-01-01",
+		endDate: new Date()
+	});
+});
