@@ -26,4 +26,8 @@ $(document).ready(function() {
 		startDate: "1900-01-01",
 		endDate: new Date()
 	});
+	
+	if (CONTROLLER === "index") {
+		IndexController.init();
+	}
 });
